@@ -8,12 +8,6 @@ An <b>O</b>pen-Source End-to-End Framework for Automated <b>D</b>etection, <b>S<
   <img width="128" alt="logo" src="https://github.com/user-attachments/assets/9d079da1-b285-401c-8d35-8580d93da842" />
 </div>
 
-## ODySSeI in Action
-
-Please find below a live demo of ODySSeI on some example ICA images.
-
-![odyssei_demo](https://github.com/user-attachments/assets/8a22571f-8d99-4e49-bff8-4ad27eed7d22)
-
 ## Setting Up the Repository
 
 To use ODySSeI, you first need to create a virtual environment to install the necessary requirements as well as our codebase. Please run the following code snippet in your terminal:
