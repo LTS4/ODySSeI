@@ -5,7 +5,7 @@ An <b>O</b>pen-Source End-to-End Framework for Automated <b>D</b>etection, <b>S<
 </div>
 
 <div align="center">
-  <img width="256" alt="logo" src="https://github.com/user-attachments/assets/9d079da1-b285-401c-8d35-8580d93da842" />
+  <img width="128" alt="logo" src="https://github.com/user-attachments/assets/9d079da1-b285-401c-8d35-8580d93da842" />
 </div>
 
 ## ODySSeI in Action
