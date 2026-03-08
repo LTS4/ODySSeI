@@ -10,7 +10,9 @@ An <b>O</b>pen-Source End-to-End Framework for Automated <b>D</b>etection, <b>S<
 
 ## Web Interface
 
-Please find below a demo of ODySSeI's web interface.
+ODySSeI is live at [swisscardia.epfl.ch](https://swisscardia.epfl.ch).
+
+Please find below a demo of ODySSeI's web interface. Demo images are available in the ``demo_images`` folder within the ``data`` folder.
 
 https://github.com/user-attachments/assets/ae494d67-9bd1-4f03-9e33-3bbcf05dcff3
 
