@@ -19,23 +19,22 @@ https://github.com/user-attachments/assets/ae494d67-9bd1-4f03-9e33-3bbcf05dcff3
 
 ## Setting Up the Repository
 
-To use ODySSeI, you first need to create a virtual environment to install the necessary requirements as well as our codebase. Please run the following code snippet in your terminal:
+To use ODySSeI, please run the following code snippet in your terminal:
 
 ```bash
-conda create --name ica python=3.11
-conda activate ica
-pip install -r requirements.txt
+git clone https://github.com/LTS4/ODySSeI
+cd odyssei
+python -m pip install -e .
 ```
 
-Next, please create a ``data`` folder in the root directory and place your custom ICA dataset folder, ``custom_dataset``, within the ``data`` folder.
+Next, please place your custom ICA dataset folder, ``custom_dataset``, within the ``data`` folder.
 
 ## Training, Validation, and Testing of our Lesion Detection Model (YOLO11m)
 
 Please run the following code snippet in your terminal:
 
 ```bash
-cd src
-python lesion_detection_train_val_test.py --pretrained_model_file=PRETRAINED_MODEL_FILE --custom_dataset=CUSTOM_DATASET --wandb_project=WANDB_PROJECT --wand_run=WANDB_RUN --num_epochs=NUM_EPOCHS
+python odyssei/lesion_detection_train_val_test.py --pretrained_model_file=PRETRAINED_MODEL_FILE --custom_dataset=CUSTOM_DATASET --wandb_project=WANDB_PROJECT --wand_run=WANDB_RUN --num_epochs=NUM_EPOCHS
 ```
 Here,
 - PRETRAINED_MODEL_FILE (str) = Pretrained Model Weights (yolo11m.pt)
@@ -50,14 +49,12 @@ Please run the following code snippet in your terminal:
 
 For DeepLabv3+:
 ```bash
-cd src
-python deeplab_lesion_segmentation_train_val_test.py --pretrained_model_file=PRETRAINED_MODEL_FILE --custom_dataset=CUSTOM_DATASET --wandb_project=WANDB_PROJECT --wand_run=WANDB_RUN --num_epochs=NUM_EPOCHS
+python odyssei/deeplab_lesion_segmentation_train_val_test.py --pretrained_model_file=PRETRAINED_MODEL_FILE --custom_dataset=CUSTOM_DATASET --wandb_project=WANDB_PROJECT --wand_run=WANDB_RUN --num_epochs=NUM_EPOCHS
 ```
 
 For U-Net:
 ```bash
-cd src
-python unet_lesion_segmentation_train_val_test.py --custom_dataset=CUSTOM_DATASET --wandb_project=WANDB_PROJECT --wand_run=WANDB_RUN --seed=SEED --batch_size=BATCH_SIZE --num_epochs=NUM_EPOCHS --loss_func=LOSS_FUNC
+python odyssei/unet_lesion_segmentation_train_val_test.py --custom_dataset=CUSTOM_DATASET --wandb_project=WANDB_PROJECT --wand_run=WANDB_RUN --seed=SEED --batch_size=BATCH_SIZE --num_epochs=NUM_EPOCHS --loss_func=LOSS_FUNC
 ```
 
 Here, 
